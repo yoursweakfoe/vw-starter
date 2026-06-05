@@ -1,0 +1,23 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    volumes:
+      - vw-data:/data/
+    environment:
+      - WEBSOCKET_ENABLED=true
+    restart: always
+
+  nginx:
+    build: ./nginx
+    container_name: vw-nginx
+    ports:
+      - "880:80"
+      - "8443:443"
+    depends_on:
+      - vaultwarden
+    restart: always
+
+volumes:
+  vw-data:
+    driver: local

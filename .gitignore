@@ -1,0 +1,6 @@
+# IDE
+/.idea/
+
+# cert files
+/nginx/certs/cert.pem
+/nginx/certs/key.pem
