@@ -12,8 +12,8 @@ services:
     build: ./nginx
     container_name: vw-nginx
     ports:
-      - "880:80"
-      - "8443:443"
+      - "1880:80"
+      - "18443:443"
     depends_on:
       - vaultwarden
     restart: always

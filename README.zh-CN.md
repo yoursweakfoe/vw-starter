@@ -33,7 +33,7 @@ docker compose up -d
 在 Bitwarden chrome插件的自托管服务器地址栏中填写以下 URL。
 
 ```
-https://vaultwarden.local:8443
+https://vaultwarden.local:18443
 ```
 
-> **注意：** 使用 `8443` 和 `880` 端口是因为 Docker Compose 的端口映射有意避开了标准端口 `80` 和 `443`。
+> **注意：** 使用 `18443` 和 `1880` 端口是因为 Docker Compose 的端口映射有意避开了标准端口 `80` 和 `443`。
